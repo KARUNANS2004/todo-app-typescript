@@ -27,6 +27,7 @@ function App() {
 
   function handleDeleteTodo(index:number):void{
     let newTodoList=todos.filter((val,valIndex)=>{
+      console.log(val)
       return !(valIndex===index);
     })
     setTodos(newTodoList)
